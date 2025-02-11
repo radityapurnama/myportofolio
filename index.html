@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gaming Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         body {
@@ -573,7 +574,7 @@
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projek">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#kontak">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
                     <li class="nav-item">
                         <a class="nav-link toggle-dark" onclick="toggleDarkMode()">
                             <i class="fas fa-moon"></i>
@@ -604,26 +605,27 @@
         </div>
     </section>
 
-    <section id="about" class="about">
-        <div class="container">
+    <section id="about" class="about" >
+        <div class="container" data-aos="zoom-in-down"
+        data-aos-duration="2000">
             <h2>Tentang Saya</h2>
             <p>Saya adalah seorang pengembang website dengan pengalaman dalam bahasa Laravel, PHP, dan SQL. Saya senang menciptakan dunia digital yang interaktif dan penuh tantangan.</p>
         </div>
     </section>
 
-    <section id="skills" class="skills">
+    <section id="skills"  class="skills">
         <div class="container">
             <h2>Skills & Tools</h2>
-            <div class="skill-tree">
-                <div class="skill-node">
+            <div class="skill-tree" >
+                <div class="skill-node" data-aos="flip-left">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1969px-Laravel.svg.png" alt="Laravel">
                     <p>Laravel 9</p>
                 </div>
-                <div class="skill-node">
+                <div class="skill-node" data-aos="flip-left">
                     <img src="https://www.svgrepo.com/show/354575/xampp.svg" alt="XAMPP">
                     <p>XAMPP</p>
                 </div>
-                <div class="skill-node">
+                <div class="skill-node" data-aos="flip-left">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/PhpMyAdmin_logo.svg/2560px-PhpMyAdmin_logo.svg.png" alt="MySQL">
                     <p>MySQL</p>
                 </div>
@@ -632,20 +634,20 @@
     </section>
 
     <section id="projek" class="projects">
-        <div class="container">
+        <div class="container" >
             <h2>CONTOH WEB</h2>
             <div class="project-list">
-                <div class="project-card">
+                <div class="project-card"data-aos="zoom-in-down">
                     <img src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/indizone/2022/06/07/vWsnB3p/5-toko-kue-yang-terkenal-enak-di-indonesia-dan-lokasi-terdekatnya54.jpg" alt="Project 1">
-                    <div class="project-info">
+                    <div class="project-info" >
                         <h3>Landing Page</h3>
                         <p>Toko Kue.</p>
                         <a href="https://radityapurnama.github.io/tokokue/" class="btn btn-primary">Demo</a>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-aos="zoom-in-down">
                     <img src="https://st.depositphotos.com/2160693/3619/v/450/depositphotos_36190013-stock-illustration-coffee-cup-vintage-design-background.jpg" alt="Project 2">
-                    <div class="project-info">
+                    <div class="project-info" >
                         <h3>Coffee</h3>
                         <p>Menu.</p>
                         <a href="https://radityapurnama.github.io/coffe/" class="btn btn-primary">Demo</a>
@@ -659,10 +661,10 @@
         <div class="container">
             <h2>KETERANGAN</h2>
             <div class="testimonial-list">
-                <div class="testimonial-card">
+                <div class="testimonial-card" data-aos="zoom-in">
                     <p class="quote">"Dilarang mengcopy website ini."</p>
                 </div>
-                <div class="testimonial-card">
+                <div class="testimonial-card" data-aos="zoom-in">
                     <p class="quote">"Hubungi saya jika ingin memesan website atau bertanya."</p>
                 </div>
             </div>
@@ -692,7 +694,7 @@
         <img class="lightbox-img" id="lightbox-img">
     </div>
 
-    <section id="kontak" class="contact">
+    <section class="contact">
         <div class="container">
             <h3>🌐 Connect with Me</h3>
             <div class="contact-info">
@@ -710,6 +712,18 @@
     <footer>
         <p>&copy; 2025 I MADE RADITYA PURNAMA | All Rights Reserved</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+            duration: 10000,
+        }    
+    );
+        
+      </script>
+
+
 
     <script>
         function toggleDarkMode() {
