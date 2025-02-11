@@ -28,34 +28,31 @@
         }
 
         .hero {
-    padding: 60px 20px;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    
-    /* 🟢 Menambahkan Gambar Cyberpunk */
-    background-image: url('https://plus.unsplash.com/premium_photo-1681400786117-df414eb06089?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmFja3JvdW5kfGVufDB8fDB8fHww');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* Efek Parallax */
-    
-    /* Efek Overlay */
-    position: relative;
-}
+            padding: 60px 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            background-image: url('https://plus.unsplash.com/premium_photo-1681400786117-df414eb06089?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmFja3JvdW5kfGVufDB8fDB8fHww');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+        }
 
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6); /* Overlay Gelap */
-    backdrop-filter: blur(3px); /* Efek Blur */
-}
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(3px);
+        }
+
         .hero-content {
             position: relative;
             z-index: 1;
@@ -435,93 +432,86 @@
             font-size: 0.9rem;
         }
 
-        /* Styling Gallery Section */
-.gallery {
-    padding: 60px 20px;
-    background: #0a0a0a;
-    text-align: center;
-    color: white;
-}
+        .gallery {
+            padding: 60px 20px;
+            background: #0a0a0a;
+            text-align: center;
+            color: white;
+        }
 
-.section-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    color: #ff0077;
-    text-shadow: 0 0 10px #ff0077, 0 0 20px #ff0077;
-}
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            color: #ff0077;
+            text-shadow: 0 0 10px #ff0077, 0 0 20px #ff0077;
+        }
 
-/* Grid Layout untuk Gallery */
-.gallery-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    justify-content: center;
-}
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
 
-/* Styling Gallery Item */
-.gallery-item {
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 0, 119, 0.5);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 0, 119, 0.5);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
 
-.gallery-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.3s ease-in-out;
-}
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease-in-out;
+        }
 
-/* Efek Hover */
-.gallery-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(255, 0, 119, 0.8);
-}
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 0, 119, 0.8);
+        }
 
-.gallery-item:hover img {
-    transform: scale(1.1);
-}
-/* Lightbox Styling */
-#lightbox {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 999;
-}
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
 
-#lightbox img {
-    max-width: 90%;
-    max-height: 80%;
-    border: 5px solid #ff0077;
-    box-shadow: 0 0 20px #ff0077;
-}
+        #lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+        }
 
-#lightbox .close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 40px;
-    color: white;
-    cursor: pointer;
-}
+        #lightbox img {
+            max-width: 90%;
+            max-height: 80%;
+            border: 5px solid #ff0077;
+            box-shadow: 0 0 20px #ff0077;
+        }
 
+        #lightbox .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 40px;
+            color: white;
+            cursor: pointer;
+        }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .gallery-container {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-}
-
+        @media (max-width: 768px) {
+            .gallery-container {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+        }
 
         @keyframes fadeIn {
             from {
@@ -554,31 +544,18 @@
                 transform: translateY(0);
             }
         }
-        /* CSS untuk tampilan desktop */
-    .project-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-    }
 
-    .project-card {
-        width: 320px;
-    }
+        @media (max-width: 768px) {
+            .project-list {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
 
-    /* CSS untuk tampilan mobile */
-    @media (max-width: 768px) {
-        .project-list {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
+            .project-card {
+                width: 100%;
+            }
         }
-
-        .project-card {
-            width: 100%;
-        }
-    }
-
     </style>
 </head>
 <body>
@@ -607,36 +584,32 @@
         </div>
     </nav>
 
-    <section  id="home" class="hero">
+    <section id="home" class="hero">
         <div class="hero-content">
             <img src="./images/WhatsApp_Image_2025-02-05_at_00.40.13__1_-removebg-preview.png" alt="Avatar">
             <h1>Hi, I’m I MADE RADITYA PURNAMA</h1>
             <p>Web Developer, No:081913914299</p>
-            
-            <a</a>
-            <p></p>
-            <div class="container" >
-            <h4>Skill Set</h4>
-            <div class="progress">
-                <div class="progress-bar bg-success" role="progressbar" style="width: 90%;">Laravel PHP - 90%</div>
+            <div class="container">
+                <h4>Skill Set</h4>
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 90%;">Laravel PHP - 90%</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 75%;">CSS - 75%</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 80%;">MySQL - 80%</div>
+                </div>
             </div>
-            <div class="progress">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 75%;">css - 75%</div>
-            </div>
-            <div class="progress">
-                <div class="progress-bar bg-warning" role="progressbar" style="width: 80%;">MySQL - 80%</div>
-            </div>
-            
         </div>
     </section>
 
     <section id="about" class="about">
         <div class="container">
             <h2>Tentang Saya</h2>
-            <p>Saya adalah seorang pengembang website dengan pengalaman dalam bahasa laravel, php, dan sql. Saya senang menciptakan dunia digital yang interaktif dan penuh tantangan.</p>
+            <p>Saya adalah seorang pengembang website dengan pengalaman dalam bahasa Laravel, PHP, dan SQL. Saya senang menciptakan dunia digital yang interaktif dan penuh tantangan.</p>
+        </div>
     </section>
-
-    
 
     <section id="skills" class="skills">
         <div class="container">
@@ -647,14 +620,13 @@
                     <p>Laravel 9</p>
                 </div>
                 <div class="skill-node">
-                    <img src="https://www.svgrepo.com/show/354575/xampp.svg" alt="xampp">
-                    <p>xampp</p>
+                    <img src="https://www.svgrepo.com/show/354575/xampp.svg" alt="XAMPP">
+                    <p>XAMPP</p>
                 </div>
                 <div class="skill-node">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/PhpMyAdmin_logo.svg/2560px-PhpMyAdmin_logo.svg.png" alt="sql">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/PhpMyAdmin_logo.svg/2560px-PhpMyAdmin_logo.svg.png" alt="MySQL">
                     <p>MySQL</p>
                 </div>
-                
             </div>
         </div>
     </section>
@@ -667,88 +639,73 @@
                     <img src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/indizone/2022/06/07/vWsnB3p/5-toko-kue-yang-terkenal-enak-di-indonesia-dan-lokasi-terdekatnya54.jpg" alt="Project 1">
                     <div class="project-info">
                         <h3>Landing Page</h3>
-                        <p>toko-kue.</p>
+                        <p>Toko Kue.</p>
                         <a href="https://radityapurnama.github.io/tokokue/" class="btn btn-primary">Demo</a>
-                        
                     </div>
                 </div>
                 <div class="project-card">
                     <img src="https://st.depositphotos.com/2160693/3619/v/450/depositphotos_36190013-stock-illustration-coffee-cup-vintage-design-background.jpg" alt="Project 2">
                     <div class="project-info">
-                        <h3>coffe</h3>
-                        <p>menu.</p>
+                        <h3>Coffee</h3>
+                        <p>Menu.</p>
                         <a href="https://radityapurnama.github.io/coffe/" class="btn btn-primary">Demo</a>
-                        
                     </div>
-                </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    
-
-<!-- Lightbox -->
-<div id="lightbox">
-    <span class="close">&times;</span>
-    <img class="lightbox-img" id="lightbox-img">
-</div>
 
     <section class="testimonials">
         <div class="container">
             <h2>KETERANGAN</h2>
-
             <div class="testimonial-list">
                 <div class="testimonial-card">
                     <p class="quote">"Dilarang mengcopy website ini."</p>
                 </div>
                 <div class="testimonial-card">
-                    <p class="quote">"hubungi saya jiak ingin memesan website atau bertanya"</p>  
+                    <p class="quote">"Hubungi saya jika ingin memesan website atau bertanya."</p>
                 </div>
-            </div>
             </div>
         </div>
     </section>
 
-    
     <section id="gallery" class="gallery">
-    <h2 class="section-title">Gallery</h2>
-    <div class="gallery-container">
-        <div class="gallery-item">
-            <img src="https://i.pinimg.com/736x/93/ac/a0/93aca07299f1ead0e771eda16210398f.jpg" alt="Game Screenshot 1">
+        <h2 class="section-title">Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/736x/93/ac/a0/93aca07299f1ead0e771eda16210398f.jpg" alt="Game Screenshot 1">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/736x/93/ac/a0/93aca07299f1ead0e771eda16210398f.jpg" alt="Game Screenshot 2">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/736x/93/ac/a0/93aca07299f1ead0e771eda16210398f.jpg" alt="Game Screenshot 3">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/736x/93/ac/a0/93aca07299f1ead0e771eda16210398f.jpg" alt="Game Screenshot 4">
+            </div>
         </div>
-        <div class="gallery-item">
-            <img src="https://i.pinimg.com/736x/93/ac/a0/93aca07299f1ead0e771eda16210398f.jpg" alt="Game Screenshot 2">
-        </div>
-        <div class="gallery-item">
-            <img src="https://i.pinimg.com/736x/93/ac/a0/93aca07299f1ead0e771eda16210398f.jpg" alt="Game Screenshot 3">
-        </div>
-        <div class="gallery-item">
-            <img src="https://i.pinimg.com/736x/93/ac/a0/93aca07299f1ead0e771eda16210398f.jpg" alt="Game Screenshot 4">
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- Lightbox -->
-<div id="lightbox">
-    <span class="close">&times;</span>
-    <img class="lightbox-img" id="lightbox-img">
-</div>
-
-<section class="contact">
-    <div class="container">
-        <h3>🌐 Connect with Me</h3>
-        <div class="contact-info">
-            <p><strong>Name:</strong> I MADE RADITYA PURNAMA</p>
-            <p><strong>Address:</strong> BALI, BADUNG, MENGWI</p>
-            <p><strong>Phone:</strong> 081913914299</p>
-        </div>
-        <div class="social-links">
-            <a href="https://www.facebook.com/share/1C8Tga1ciM/" class="social-btn facebook">Facebook</a>
-            <a href="https://instagram.com/Radityapurnama22" class="social-btn instagram">Instagram</a>
-        </div>
+    <div id="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-img" id="lightbox-img">
     </div>
-</section>
+
+    <section class="contact">
+        <div class="container">
+            <h3>🌐 Connect with Me</h3>
+            <div class="contact-info">
+                <p><strong>Name:</strong> I MADE RADITYA PURNAMA</p>
+                <p><strong>Address:</strong> BALI, BADUNG, MENGWI</p>
+                <p><strong>Phone:</strong> 081913914299</p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/1C8Tga1ciM/" class="social-btn facebook">Facebook</a>
+                <a href="https://instagram.com/Radityapurnama22" class="social-btn instagram">Instagram</a>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2025 I MADE RADITYA PURNAMA | All Rights Reserved</p>
@@ -758,46 +715,27 @@
         function toggleDarkMode() {
             document.body.classList.toggle("dark-mode");
         }
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- JavaScript untuk Mode Gelap/Terang -->
-<script>
-    function toggleDarkMode() {
-        document.body.classList.toggle("dark-mode");
-    }
-</script>
-
-<!-- Bootstrap Bundle (Popper.js + Bootstrap.js) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- JavaScript untuk Lightbox Gallery -->
-<script>
-    // Ambil semua gambar dalam gallery
-    document.querySelectorAll(".gallery-item img").forEach(img => {
-        img.addEventListener("click", function() {
-            document.getElementById("lightbox").style.display = "flex"; // Tampilkan lightbox
-            document.getElementById("lightbox-img").src = this.src; // Ganti src gambar di lightbox
-        });
-    });
-
-    // Tutup lightbox saat tombol close diklik
-    document.querySelector("#lightbox .close").addEventListener("click", function() {
-        document.getElementById("lightbox").style.display = "none";
-    });
-</script>
-
-<!-- JavaScript untuk Smooth Scroll -->
-<script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
+        document.querySelectorAll(".gallery-item img").forEach(img => {
+            img.addEventListener("click", function() {
+                document.getElementById("lightbox").style.display = "flex";
+                document.getElementById("lightbox-img").src = this.src;
             });
         });
-    });
-</script>
 
+        document.querySelector("#lightbox .close").addEventListener("click", function() {
+            document.getElementById("lightbox").style.display = "none";
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
